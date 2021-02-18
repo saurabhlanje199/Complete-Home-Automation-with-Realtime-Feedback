@@ -4,7 +4,7 @@ With this you can control home appliances anywhere in the world from your phone 
 With ESP32 you will be able to control five AC appliances and with Node MCU ESP8266 you will be able to control two AC appliances, along with the speed of the fan using the capacitive dimming method. Everything will be working with the internet and without internet along with the manual switches and fan regulators with real-time feedback on the app. 
 Phew! That sounds so freaking awesome. Well, don’t worry, I have tried to keep it as simple as possible so that it becomes easy for you to learn and make it by yourself. Let us just dive in.
 
-### Watch Working and Tutorial of this project on [Youtube]()
+### Watch Working and Tutorial of this project on [Youtube](https://youtu.be/jA4DQPxXu4A)
 
 ## Table of content
 
