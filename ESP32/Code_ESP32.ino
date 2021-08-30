@@ -458,9 +458,9 @@ void speed0()
 {
   //All Relays Off - Fan at speed 0
   if (DEBUG_SW)Serial.println("SPEED 0");
-  digitalWrite(Speed1, LOW);
-  digitalWrite(Speed2, LOW);
-  digitalWrite(Speed4, LOW);
+  digitalWrite(Speed1, HIGH);
+  digitalWrite(Speed2, HIGH);
+  digitalWrite(Speed4, HIGH);
 
 }
 
@@ -468,34 +468,34 @@ void speed1()
 {
   //Speed1 Relay On - Fan at speed 1
   if (DEBUG_SW)Serial.println("SPEED 1");
-  digitalWrite(Speed1, LOW);
-  digitalWrite(Speed2, LOW);
-  digitalWrite(Speed4, LOW);
-  delay(500);
   digitalWrite(Speed1, HIGH);
+  digitalWrite(Speed2, HIGH);
+  digitalWrite(Speed4, HIGH);
+  delay(500);
+  digitalWrite(Speed1, LOW);
 }
 
 void speed2()
 {
   //Speed2 Relay On - Fan at speed 2
   if (DEBUG_SW)Serial.println("SPEED 2");
-  digitalWrite(Speed1, LOW);
-  digitalWrite(Speed2, LOW);
-  digitalWrite(Speed4, LOW);
-  delay(500);
+  digitalWrite(Speed1, HIGH);
   digitalWrite(Speed2, HIGH);
+  digitalWrite(Speed4, HIGH);
+  delay(500);
+  digitalWrite(Speed2, LOW);
 }
 
 void speed3()
 {
   //Speed1 & Speed2 Relays On - Fan at speed 3
   if (DEBUG_SW)Serial.println("SPEED 3");
-  digitalWrite(Speed1, LOW);
-  digitalWrite(Speed2, LOW);
-  digitalWrite(Speed4, LOW);
-  delay(500);
   digitalWrite(Speed1, HIGH);
   digitalWrite(Speed2, HIGH);
+  digitalWrite(Speed4, HIGH);
+  delay(500);
+  digitalWrite(Speed1, LOW);
+  digitalWrite(Speed2, LOW);
 
 }
 
@@ -503,11 +503,11 @@ void speed4()
 {
   //Speed4 Relay On - Fan at speed 4
   if (DEBUG_SW)Serial.println("SPEED 4");
-  digitalWrite(Speed1, LOW);
-  digitalWrite(Speed2, LOW);
-  digitalWrite(Speed4, LOW);
-  delay(500);
+  digitalWrite(Speed1, HIGH);
+  digitalWrite(Speed2, HIGH);
   digitalWrite(Speed4, HIGH);
+  delay(500);
+  digitalWrite(Speed4, LOW);
 }
 
 
